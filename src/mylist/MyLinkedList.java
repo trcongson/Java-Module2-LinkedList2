@@ -51,15 +51,16 @@ public class MyLinkedList {
     }
 
     public void remove(int index, Object data){
-        Node temp = tail;
-        Node holder;
-        for (int i=0; i < index -1 && temp.next != null;i++){
-            if (boolean temp = holder){
-                for (int j = 1; j < index - 1 && temp.next != null; j++){
-                    temp = holder;
+        Node temp = head;
+        for (int i=0; i < index;i++){
+            while (temp == temp.next){
+                for (int j = 1; j < index - 1; j++){
+                    temp = temp.next;
                 }
+                numNodes--;
             }
         }
-        numNodes--;
     }
+
+    public void size (int)
 }
